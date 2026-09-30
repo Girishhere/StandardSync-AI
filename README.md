@@ -59,6 +59,38 @@ npm run dev
 
 Frontend runs at: **http://localhost:3000**
 
+## Production Deployment
+
+We recommend **Vercel** for the frontend and **Render** for the backend. Both offer free tiers suitable for a hackathon prototype.
+
+### 1. Deploy the Backend (Render)
+
+1. Go to [Render](https://render.com/) and create a new **Web Service**.
+2. Connect this GitHub repository.
+3. Configure the service:
+   - **Root Directory**: `backend`
+   - **Environment**: `Python`
+   - **Build Command**: `pip install -r requirements.txt`
+   - **Start Command**: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+4. Add Environment Variables:
+   - `PYTHON_VERSION` = `3.11.0`
+   - `DEMO_MODE` = `true`
+   - `ALLOWED_ORIGINS` = `*` *(or explicitly list your Vercel URL once generated)*
+5. Click **Deploy**. Note your public URL (e.g., `https://standardsync-api.onrender.com`).
+
+*(Alternatively, if you use Render's Blueprint feature, just connect your repo and it will automatically read `render.yaml`)*
+
+### 2. Deploy the Frontend (Vercel)
+
+1. Go to [Vercel](https://vercel.com/) and click **Add New Project**.
+2. Import this GitHub repository.
+3. Configure the project:
+   - **Framework Preset**: Next.js
+   - **Root Directory**: `frontend`
+4. Add Environment Variable:
+   - `NEXT_PUBLIC_API_URL` = `<YOUR_RENDER_BACKEND_URL>`
+5. Click **Deploy**.
+
 ---
 
 ## Environment Variables
