@@ -296,8 +296,6 @@ def search_standards(query: str, language: str = "en") -> SearchResult:
     5. Return evidence-grounded result or no-match.
     """
     start = time.perf_counter()
-    query = _sanitize(query)
-
     translated_query: Optional[str] = None
 
     # ── Multilingual: translate non-English queries in demo mode ──────────────
@@ -310,6 +308,8 @@ def search_standards(query: str, language: str = "en") -> SearchResult:
         else:
             # Best-effort: run as-is (will likely score low → no-match)
             logger.info("No demo mapping for language=%s query, running as-is.", language)
+
+    query = _sanitize(query)
 
     threshold = settings.similarity_threshold
     top_k = settings.faiss_top_k

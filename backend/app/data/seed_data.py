@@ -769,6 +769,9 @@ STANDARDS_DATA = [
 ]
 
 MULTILINGUAL_DEMO_MAPPINGS = {
+    "अस्पताल में उपयोग के लिए कॉपर वायर": "hospital grade copper wire",
+    "ఆసుపత్రిలో ఉపయోగించే కాపర్ వైర్": "hospital grade copper wire",
+    "மருத்துவமனை பயன்பாட்டிற்கான செம்பு கம்பி": "hospital grade copper wire",
     "अस्पताल ग्रेड कॉपर वायर": "hospital grade copper wire",
     "विद्युत केबल": "electrical cable for buildings",
     "स्टेनलेस स्टील टैंक": "stainless steel drinking water tank",

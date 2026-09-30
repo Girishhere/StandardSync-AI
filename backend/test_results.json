@@ -1,0 +1,44 @@
+[
+  {
+    "q": "hospital grade copper wire",
+    "lang": "en",
+    "found": true,
+    "score": 0.97,
+    "standard": "IS 8130:2013"
+  },
+  {
+    "q": "अस्पताल में उपयोग के लिए कॉपर वायर",
+    "lang": "hi",
+    "found": true,
+    "score": 0.97,
+    "standard": "IS 8130:2013"
+  },
+  {
+    "q": "ఆసుపత్రిలో ఉపయోగించే కాపర్ వైర్",
+    "lang": "te",
+    "found": true,
+    "score": 0.97,
+    "standard": "IS 8130:2013"
+  },
+  {
+    "q": "மருத்துவமனை பயன்பாட்டிற்கான செம்பு கம்பி",
+    "lang": "ta",
+    "found": true,
+    "score": 0.97,
+    "standard": "IS 8130:2013"
+  },
+  {
+    "q": "blockchain cryptocurrency token",
+    "lang": "en",
+    "found": false,
+    "score": 0.0,
+    "standard": "None"
+  },
+  {
+    "q": "random xyz procurement item",
+    "lang": "en",
+    "found": false,
+    "score": 0.0,
+    "standard": "None"
+  }
+]
